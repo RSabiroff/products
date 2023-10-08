@@ -54,48 +54,107 @@ div:has( > img) {
 
 html {
 	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	width: 100%;
+	
 	scroll-behavior: smooth;
 }
 
 body {
 	font-family: 'Inter', sans-serif;
-
+	height: 100%;
+	width: 100%;
+	max-width: 393px;
+	overflow-x: hidden;
+	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100%;
 }
 
 .main {
+	font-size: 50px;
+
+
 	height: 100%;
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 	align-items: center;
 	flex-direction: column;
 }
 
-.test {
-	
-	height: 10px;
-	background-color: black;
-	margin-bottom: 50px;
+.borders {
+	border-top: 1px solid;
+	border-bottom: 1px solid;
 }
 
-.test1 {
-	width: 200px;
+.wrapper {
+	font-size: 50px;
+
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
 }
 
-.test2 {
-	width: 300px;
+.beverages {
+	height: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
 }
 
-.test3 {
-	width: 400px;
+.beverages__kvass span {
+	letter-spacing: 30.8px;
 }
 
-.test4 {
-	width: 500px;
+.back-button {
+	width: 100%;
+	max-width: 393px;
+	padding: 20px;
+	/* color: white; */
+	/* background-color: red; */
+	background-color: white;
+}
+
+.inwrapper {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.good {
+	border: 3px solid green;
+}
+
+.bad {
+	border: 3px solid red;
+}
+
+.medium {
+	border: 3px solid gray;
+}
+
+.grade {
+	display: flex;
+	max-width: 393px;
+	height: 190px;
+	white-space: nowrap;
+}
+.grade img {
+	display: inline-block;
+	width: auto;
+	height: 190px;
+}
+
+#ID_test {
+
 }
