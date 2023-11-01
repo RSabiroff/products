@@ -17,7 +17,7 @@ let imgs = document.getElementsByTagName('img');
 for (let img of imgs) {
 	img.setAttribute("draggable", "false");
 	
-	img.ondblclick = function (e) {
+	img.onclick = function (e) {
 		document.getElementById('ID_bigImage').setAttribute('src', img.getAttribute('src'));
 
 		document.getElementById('ID_bigImage-wrapper').style.display = 'flex';
