@@ -3,15 +3,9 @@
 :root {
 	/* font-size: calc(5px + (10 - 5) * ((100vw - 768px) / (1536 - 768))); */
 
-	/* font-size: calc(10px + (20 - 10) * ((100vw - 393.6px) / (787.2 - 393.6))); */
-	
-	/* font-size: calc(5px + (10 - 5) * ((100vw - 768px) / (768 - 393.6))); */
 	font-size: 10px;
-}
-@media (max-width: 393.6px) {
-	:root {
-		font-size: calc(5px + (10 - 5) * ((100vw - 196.8px) / (393.6 - 196.8)));
-	}
+	
+	/* font-size: 5px; */
 }
 
 *,
@@ -71,8 +65,9 @@ html {
 }
 
 body {
-	/* max-width: 393px;
-	max-height: 658px; */
+	max-width: 393px;
+	max-height: 658px;
+
 
 
 	font-family: 'Inter', sans-serif;
@@ -86,7 +81,7 @@ body {
 }
 
 .main {
-	font-size: 5rem;
+	font-size: 50px;
 
 
 	height: 100%;
@@ -97,18 +92,17 @@ body {
 }
 
 .borders {
-	border-top: 0.02em solid;
-	border-bottom: 0.02em solid;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
 }
 
 .main__beverages span {
-	letter-spacing: 0.114em;
+	letter-spacing: 5.7px;
 }
 
 .wrapper {
-	font-size: 5rem;
+	font-size: 50px;
 
-	
 	height: 100%;
 	width: 100%;
 	position: fixed;
@@ -133,14 +127,15 @@ body {
 }
 
 .beverages__kvass span {
-	letter-spacing: 0.616em;
+	letter-spacing: 30.8px;
 }
 
 .back-button {
 	width: 100%;
-	/* max-width: 393px; */
-	/* max-width: 7.86em; */
-	padding: 0.32em;
+	max-width: 393px;
+	padding: 16px;
+	/* color: white; */
+	/* background-color: red; */
 	background-color: white;
 }
 
@@ -152,39 +147,39 @@ body {
 }
 
 .good {
-	border: 0.06em solid green;
+	border: 3px solid green;
 }
 
 .bad {
-	border: 0.06em solid red;
+	border: 3px solid red;
 }
 
 .medium {
-	border: 0.06em solid gray;
+	border: 3px solid gray;
 }
 
 .grade {
 	display: flex;
-	width: 100vw;
-	height: 3.5em;
+	width: 393px;
+	height: 175px;
 	white-space: nowrap;
 }
 .grade img {
 	display: inline-block;
-	width: 2.625em;
-	height: 3.5em;
+	width: auto;
+	height: 175px;
 }
 
 .sweets__glazedCurds span {
-	letter-spacing: 0.296em;
+	letter-spacing: 14.8px;
 }
 
 .main__yoghurts span {
-	letter-spacing: 0.114em;
+	letter-spacing: 5.7px;
 }
 
 .yoghurts__regular span {
-	letter-spacing: 0.032em;
+	letter-spacing: 1.6px;
 }
 
 .bigImage-wrapper {
@@ -203,10 +198,8 @@ body {
 }
 
 .bigImage {
-	max-width: 39.3em;
-	max-height: 65.8em;
-	
-	
+	max-width: 393px;
+	max-height: 658px;
 }
 .bigImage img {
 

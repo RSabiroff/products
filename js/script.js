@@ -1,6 +1,7 @@
 'use strict';
 
 
+
 let headlines = document.getElementsByClassName('headline');
 
 for (let h of headlines) {
@@ -16,7 +17,7 @@ let imgs = document.getElementsByTagName('img');
 for (let img of imgs) {
 	img.setAttribute("draggable", "false");
 	
-	img.onclick = function (e) {
+	img.ondblclick = function (e) {
 		document.getElementById('ID_bigImage').setAttribute('src', img.getAttribute('src'));
 
 		document.getElementById('ID_bigImage-wrapper').style.display = 'flex';
@@ -38,8 +39,8 @@ for (let i of grade) {
 
 		if (parseInt(image.style.marginLeft) > 0) {
 			image.style.marginLeft = 0;
-		} else if (parseInt(image.style.marginLeft) < -178) {
-			image.style.marginLeft = -178 + "px";
+		} else if (parseInt(image.style.marginLeft) < -125) {
+			image.style.marginLeft = -125 + "px";
 		}
 	}
 
@@ -63,7 +64,6 @@ let buttons = document.getElementsByClassName('back-button');
 for (let b of buttons) {
 	b.onclick = function (e) {
 		b.parentElement.style.display = "none";
-		// alert( b.parentElement.style );
 	};
 }
 
